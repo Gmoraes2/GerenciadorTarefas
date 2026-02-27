@@ -1,112 +1,140 @@
-#Gerenciador de Tarefas - React
+#Task Manager | React + Vite
 
-Aplicação web de gerenciamento de tarefas desenvolvida com React + Vite, permitindo adicionar, visualizar, concluir e excluir tarefas.
+Aplicação moderna de gerenciamento de tarefas desenvolvida com React 18, focada em componentização, boas práticas de estado e navegação entre páginas.
 
-O projeto também utiliza React Router para navegação entre páginas e LocalStorage para persistência de dados no navegador.
+O projeto simula um cenário real de aplicação SPA, incluindo persistência local, rotas dinâmicas e controle de tema (Dark Mode).
 
-# Tecnologias Utilizadas
-# React 18
-# Vite
-# TailwindCSS
-# React Router DOM
-# UUID
-# Lucide React (ícones)
-# LocalStorage
-# ESLint
-# Estrutura do Projeto
+##Preview
+
+Gerencie tarefas de forma simples e eficiente:
+
+## Criar tarefas
+
+## Marcar como concluída
+
+##Remover tarefas
+
+## Visualizar detalhes
+
+## Alternar entre Light/Dark Mode
+
+## Persistência automática com LocalStorage
+
+## Tecnologias Utilizadas
+Tecnologia	Finalidade
+React 18	Construção da interface
+Vite	Build tool moderna e rápida
+TailwindCSS	Estilização utilitária
+React Router DOM	Navegação SPA
+UUID	Geração de IDs únicos
+Lucide React	Ícones
+LocalStorage API	Persistência de dados
+ESLint	Padronização de código
+## Arquitetura do Projeto
+
+Organização baseada em separação de responsabilidades:
+
 src/
  ├── assets/
  ├── componentes/
  │    ├── AddTasks.jsx
+ │    ├── Tasks.jsx
  │    ├── Button.jsx
  │    ├── Input.jsx
- │    ├── Tasks.jsx
  │    └── Title.jsx
  ├── pages/
  │    └── TaskPage.jsx
  ├── App.jsx
  ├── main.jsx
-# Funcionalidades
+# Estrutura pensada para:
 
-# Adicionar nova tarefa
+Reutilização de componentes
 
-# Listar tarefas
+Escalabilidade
 
-# Marcar tarefa como concluída
+Manutenção simples
 
-# Excluir tarefa
+Separação entre UI e lógica
 
-# Visualizar detalhes da tarefa
+## Conceitos Técnicos Aplicados
 
-# Persistência automática com LocalStorage
+useState para controle de estado
 
-#Integração opcional com API (JSONPlaceholder)
+useEffect para sincronização com LocalStorage
 
-# Demonstração das Telas
-# Página Principal
+Manipulação imutável de arrays
 
-Campo para título
+Props drilling controlado
 
-Campo para descrição
+Navegação com useNavigate
 
-Botão de adicionar
+Query Params com URLSearchParams
 
-Lista de tarefas
+Condicional de classes com Tailwind
 
-# Página de Detalhes
+Persistência de tema (Dark Mode) via document.documentElement
 
-Exibição do título
+# Dark Mode
 
-Exibição da descrição
+Implementado utilizando:
 
-Navegação via query params
+darkMode: "class" no Tailwind
 
-# Como Rodar o Projeto
-# Clonar o repositório
+Controle via estado global
+
+Persistência no LocalStorage
+
+Transição suave com transition-colors
+
+O tema é mantido mesmo após atualização da página.
+
+## Persistência de Dados
+
+As tarefas são armazenadas no navegador utilizando:
+
+localStorage.setItem("tasks", JSON.stringify(tasks))
+
+Isso garante:
+
+Experiência contínua
+
+Simulação de comportamento backend
+
+Melhor UX
+
+ Integração com API (Opcional)
+
+Estrutura preparada para consumir API externa:
+
+https://jsonplaceholder.typicode.com/todos?_limit=7
+
+Permite simular dados remotos e adaptar facilmente para backend próprio.
+
+# Como Executar
+# Clonar repositório
 git clone https://github.com/seu-usuario/seu-repositorio.git
-
-# Entrar na pasta
-cd seu-repositorio
 
 # Instalar dependências
 npm install
 
-# Rodar projeto
+# Rodar ambiente de desenvolvimento
 npm run dev
 
-O projeto irá rodar em:
+Aplicação disponível em:
 
 http://localhost:5173
-# Conceitos Aplicados
+# Evolução Técnica Demonstrada
 
-useState
+Este projeto demonstra:
 
-useEffect
+Domínio de React básico-intermediário
 
-Props
+Organização limpa de código
 
-Componentização
+Pensamento de escalabilidade
 
-React Router (useNavigate)
+Controle de estado eficiente
 
-Query Params
+Manipulação de rotas SPA
 
-Manipulação de estado imutável
-
-Persistência com LocalStorage
-
-Organização por pastas (componentes e pages)
-
-# Evolução no Projeto
-
-Este projeto foi desenvolvido para consolidar conhecimentos em:
-
-Estruturação de aplicações React
-
-Gerenciamento de estado
-
-Navegação entre páginas
-
-Boas práticas de componentização
-
-Organização de código
+Experiência com ferramentas modernas (Vite + Tailwind)
