@@ -1,62 +1,63 @@
-#Gerenciador de tarefas| React + Vite
+Task Manager | React + Vite
 
-Aplicação moderna de gerenciamento de tarefas desenvolvida com React 18, focada em componentização, boas práticas de estado e navegação entre páginas.
+Aplicação web de gerenciamento de tarefas desenvolvida com React 18, utilizando arquitetura SPA, persistência local de dados e controle de tema (Dark Mode).
 
-O projeto simula um cenário real de aplicação SPA, incluindo persistência local, rotas dinâmicas e controle de tema (Dark Mode).
+Aplicação em produção:
+https://gerenciador-tarefas-oufqn2p4u-gmoraes2s-projects.vercel.app/
 
-##Preview
+Sobre o Projeto
 
-Gerencie tarefas de forma simples e eficiente:
+O Task Manager é uma aplicação front-end que permite criar, visualizar, concluir e remover tarefas. O projeto foi estruturado com foco em organização de componentes, boas práticas de estado e navegação entre páginas.
 
-## Criar tarefas
+A aplicação simula comportamentos reais de um sistema produtivo, incluindo persistência de dados no navegador e deploy em ambiente de produção.
 
-## Marcar como concluída
+Tecnologias Utilizadas
 
-##Remover tarefas
+React 18
 
-## Visualizar detalhes
+Vite
 
-## Alternar entre Light/Dark Mode
+TailwindCSS
 
-## Persistência automática com LocalStorage
+React Router DOM
 
-## Tecnologias Utilizadas
-Tecnologia	Finalidade
-React 18	Construção da interface
-Vite	Build tool moderna e rápida
-TailwindCSS	Estilização utilitária
-React Router DOM	Navegação SPA
-UUID	Geração de IDs únicos
-Lucide React	Ícones
-LocalStorage API	Persistência de dados
-ESLint	Padronização de código
-## Arquitetura do Projeto
+UUID
 
-Organização baseada em separação de responsabilidades:
+Lucide React
+
+LocalStorage API
+
+ESLint
+
+Vercel (Deploy)
+
+Funcionalidades
+
+Criação de novas tarefas
+
+Marcação de tarefas como concluídas
+
+Exclusão de tarefas
+
+Página de detalhes com navegação via query params
+
+Persistência automática utilizando LocalStorage
+
+Alternância entre Light e Dark Mode com salvamento de preferência
+
+Arquitetura do Projeto
+
+Organização baseada em separação de responsabilidades e reutilização de componentes:
 
 src/
- ├── assets/
- ├── componentes/
- │    ├── AddTasks.jsx
- │    ├── Tasks.jsx
- │    ├── Button.jsx
- │    ├── Input.jsx
- │    └── Title.jsx
- ├── pages/
- │    └── TaskPage.jsx
- ├── App.jsx
- ├── main.jsx
-# Estrutura pensada para:
+├── componentes/
+├── pages/
+├── App.jsx
+├── main.jsx
 
-Reutilização de componentes
+A estrutura facilita manutenção, escalabilidade e reaproveitamento de código.
 
-Escalabilidade
-
-Manutenção simples
-
-Separação entre UI e lógica
-
-## Conceitos Técnicos Aplicados
+Conceitos Aplicados
 
 useState para controle de estado
 
@@ -64,77 +65,31 @@ useEffect para sincronização com LocalStorage
 
 Manipulação imutável de arrays
 
-Props drilling controlado
+Navegação SPA com React Router
 
-Navegação com useNavigate
+Uso de URLSearchParams para envio de dados entre rotas
 
-Query Params com URLSearchParams
+Controle global de tema utilizando classe “dark” do Tailwind
 
-Condicional de classes com Tailwind
+Persistência client-side
 
-Persistência de tema (Dark Mode) via document.documentElement
+Deploy
 
-# Dark Mode
+A aplicação está publicada na Vercel, demonstrando experiência com:
 
-Implementado utilizando:
+Build de aplicação React com Vite
 
-darkMode: "class" no Tailwind
+Configuração de ambiente de produção
 
-Controle via estado global
+Publicação e disponibilização pública do projeto
 
-Persistência no LocalStorage
+Link de acesso:
+https://gerenciador-tarefas-oufqn2p4u-gmoraes2s-projects.vercel.app/
 
-Transição suave com transition-colors
+Como Executar Localmente
 
-O tema é mantido mesmo após atualização da página.
-
-## Persistência de Dados
-
-As tarefas são armazenadas no navegador utilizando:
-
-localStorage.setItem("tasks", JSON.stringify(tasks))
-
-Isso garante:
-
-Experiência contínua
-
-Simulação de comportamento backend
-
-Melhor UX
-
- Integração com API (Opcional)
-
-Estrutura preparada para consumir API externa:
-
-https://jsonplaceholder.typicode.com/todos?_limit=7
-
-Permite simular dados remotos e adaptar facilmente para backend próprio.
-
-# Como Executar
-# Clonar repositório
 git clone https://github.com/seu-usuario/seu-repositorio.git
 
-# Instalar dependências
+cd seu-repositorio
 npm install
-
-# Rodar ambiente de desenvolvimento
 npm run dev
-
-Aplicação disponível em:
-
-http://localhost:5173
-# Evolução Técnica Demonstrada
-
-Este projeto demonstra:
-
-Domínio de React básico-intermediário
-
-Organização limpa de código
-
-Pensamento de escalabilidade
-
-Controle de estado eficiente
-
-Manipulação de rotas SPA
-
-Experiência com ferramentas modernas (Vite + Tailwind)
