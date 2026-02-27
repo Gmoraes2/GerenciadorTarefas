@@ -1,4 +1,4 @@
-#Task Manager | React + Vite
+#Gerenciador de tarefas| React + Vite
 
 Aplicação moderna de gerenciamento de tarefas desenvolvida com React 18, focada em componentização, boas práticas de estado e navegação entre páginas.
 
