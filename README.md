@@ -5,23 +5,14 @@ Aplicação web de gerenciamento de tarefas desenvolvida com React + Vite, permi
 O projeto também utiliza React Router para navegação entre páginas e LocalStorage para persistência de dados no navegador.
 
 # Tecnologias Utilizadas
-
 # React 18
-
 # Vite
-
 # TailwindCSS
-
 # React Router DOM
-
 # UUID
-
 # Lucide React (ícones)
-
 # LocalStorage
-
 # ESLint
-
 # Estrutura do Projeto
 src/
  ├── assets/
